@@ -1,0 +1,116 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: black ;
+    width: 100%;
+}
+.titulo {
+    background-color: black;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.titulo h1 {
+    color: red;
+    font-size: 4em;
+    font-family: roboto;
+    font-weight: 300;
+    margin-top: 2% ;
+}
+
+header nav {
+    background-color: black;
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 2%; 
+}
+
+header nav ul li {
+    padding: 0px 50%;  
+    font-family: roboto;
+    
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: red;
+}
+a:link {
+    color: red;
+}
+
+a:active {
+    color: yellow;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black;
+}
+.card {
+    height: 450px;
+    width: 300px;
+    margin: 5% 0%;
+    box-shadow: rgba(199, 197, 197, 0.2) 0px 7px 29px 0px;
+    
+}
+
+
+.portada {
+    height: 320px;
+    width: 100%;
+}
+
+.card-bot {
+    display: flex;
+    flex-direction: column;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 2%;
+}
+
+.info h3 {
+    color: yellow;
+    font-family: roboto;
+}
+
+
+.info p {
+    margin-left: 2%;
+    color: white;
+    font-family: roboto;
+    
+}
+
+@media (max-width: 768px) {
+    .titulo h1 {
+        font-size: 3em;
+    }
+    
+    header nav ul li {
+        padding: 0px 10%;
+        font-size: 0.9em;
+    }
+}

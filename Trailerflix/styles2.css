@@ -1,0 +1,162 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    /*border: solid 1px white;*/
+}
+
+header {
+    background-color: black ;
+    width: 100%;
+}
+.titulo {
+    background-color: black;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.titulo h1 {
+    color: red;
+    font-size: 4em;
+    font-family: roboto;
+    font-weight: 300;
+    margin-top: 2% ;
+}
+
+header nav {
+    background-color: black;
+    height: 30px;
+    width: 100%;
+
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 3%; 
+}
+
+header nav ul li {  
+    font-family: roboto;
+    
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: red;
+}
+a:link {
+    color: red;
+}
+
+a:active {
+    color: yellow;
+}
+
+main {
+    background-color: black;
+    width: 100%;
+    padding-top: 2%;
+}
+
+.subtitulo {
+    display: flex;
+    justify-content: center;
+}
+
+.subtitulo h2 {
+    font-family: roboto;
+    font-size: 3em;
+    font-weight: 200;
+}
+
+section {
+    width: 100%;
+    margin-top: 4%;
+    display: flex;
+}
+
+.portada {
+    width: 150%;
+    margin-left: 1%;
+}
+
+
+.portada img {
+    height: 500px;
+    width: 100%;
+}
+
+.detail-container__grid {
+    display: grid;
+    grid-template-columns: 12% 85%;
+    grid-template-rows: repeat(6, 0.8fr);
+    margin-left: 5%;
+    }
+
+.detail-h1 {
+        color: yellow;
+        font-family: roboto;
+        font-weight: 500;
+        margin: 1%;
+    }
+    
+.detail-p {
+        color: white;
+        font-family: roboto;
+        font-weight: 300;
+        margin-left: 2%;
+
+}
+
+@media (max-width: 900px) {
+    
+    .titulo h1 {
+        font-size: 3em;
+    }
+
+    .subtitulo h2 {
+        font-size: 1.6em;
+    }
+
+    a {
+        font-size: 0.8em;
+    }
+    
+    section {
+        flex-direction: column;
+    }
+
+    .portada {
+        display: flex;
+        justify-content: center;
+        margin-left: 0px;
+        margin-top: 1%;
+        width: 100%;
+
+    }
+    
+
+    .portada img {
+        width: 95%;
+        
+    }
+
+    .detail-container__grid {
+        display: grid;
+        grid-template-columns: 20% 70%;
+        grid-template-rows: repeat(6, 0.5fr);
+        margin-left: 2.5%;
+        margin-top: 3%;
+        }
+
+        .detail-p {
+
+            margin-left: 6%;
+        }
+}
